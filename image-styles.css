@@ -101,3 +101,20 @@
   display: block;         /* no inline gaps */
   border-radius: 4px;     /* optional rounding */
 }
+
+
+
+
+
+
+/*Facebook central location*/
+/* Center the icon container */
+.social-links {
+  text-align: center;            /* center inline-block children */
+}
+
+/* Make the SVG itself a block and auto-margin it */
+.social-link svg {
+  display: block;
+  margin: 0 auto;                /* horizontally center the SVG */
+}
