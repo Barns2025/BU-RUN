@@ -17,3 +17,17 @@
 
 /* (Optional) initial hidden state can be managed via JavaScript if needed */
 /* .hidden { opacity: 0; transform: translateY(20px); } */
+
+
+
+/*Facebook central location*/
+/* Center the icon container */
+.social-links {
+  text-align: center;            /* center inline-block children */
+}
+
+/* Make the SVG itself a block and auto-margin it */
+.social-link svg {
+  display: block;
+  margin: 0 auto;                /* horizontally center the SVG */
+}
