@@ -4,10 +4,10 @@ const mobileMenuContact = document.querySelector('.mobile-menu');
 menuToggleContact.addEventListener('click', () => {
   if (mobileMenuContact.style.display === 'block') {
     mobileMenuContact.style.display = 'none';
-    menuToggleContact.textContent = 'Menu';
+    menuToggleContact.textContent = '☰ Menu';
   } else {
     mobileMenuContact.style.display = 'block';
-    menuToggleContact.textContent = 'Close';
+    menuToggleContact.textContent = '✕ Close';
   }
 });
 // Contact form submission handler (dummy for offline demonstration)

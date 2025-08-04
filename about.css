@@ -5,8 +5,9 @@ body {
   line-height: 1.6;
 }
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;  /* replaced Montserrat */
 }
+
 .top-bar {
   background: #333;
   color: #f0f0f0;
@@ -224,7 +225,7 @@ h1, h2, h3 {
   color: #777;
 }
 /* Hide desktop links & show hamburger on small screens */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   /* 1) Hide the full menu list */
   .nav-list {
     display: none !important;
@@ -323,4 +324,32 @@ header.main-header .main-nav .nav-list a.current {
 .top-bar .social-links {
   flex: 1 1 auto;       /* default behavior, will sit beside .contact-info */
   text-align: right;    /* keep them aligned right */
+}
+
+
+/* ========================================== */
+/* Ensure all pages use the self-hosted fonts */
+/* ========================================== */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+
+/*Facebook central location*/
+/* Center the icon container */
+.social-links {
+  text-align: center;            /* center inline-block children */
+}
+
+/* Make the SVG itself a block and auto-margin it */
+.social-link svg {
+  display: block;
+  margin: 0 auto;                /* horizontally center the SVG */
 }

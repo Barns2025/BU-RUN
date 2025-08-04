@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
   menuToggle.addEventListener("click", () => {
     if (mobileMenu.style.display === 'block') {
       mobileMenu.style.display = 'none';
-      menuToggle.textContent = 'Menu';
+      menuToggle.textContent = '☰ Menu';
     } else {
       mobileMenu.style.display = 'block';
-      menuToggle.textContent = 'Close';
+      menuToggle.textContent = '✕ Close';
     }
   });
 

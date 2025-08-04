@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- in your <head> -->
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1CmXjKcBznPVVWfRzL3Gh/ZJiY0apwOxPksjzTYS6V5ocr4uGWXDjWDcvLg6VqE8yK5ot0w0OZ4YKFuCm3fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
   <title>Contact Us – Barns Unlimited</title>
   <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="home.css" />
   <link rel="stylesheet" href="image-styles.css" />
+  <!-- Animations styles (if any animations included) -->
+  <link rel="stylesheet" href="animations.css" />
 </head>
 <body>
   <!-- Header -->
@@ -36,30 +42,33 @@
         />
       </a>
     </div>
-    <nav class="main-nav">
-      <ul class="nav-list">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="metal-sales.html">Metal Sales</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html" class="current">Contact</a></li>
-      </ul>
-      <div class="menu-toggle">Menu</div>
-    </nav>
-  </header>
-  <div class="mobile-menu">
-    <ul>
+  <nav class="main-nav">
+    <ul class="nav-list">
       <li><a href="home.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="metal-sales.html">Metal Sales</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="careers.html" >Careers</a></li>
       <li><a href="contact.html" class="current">Contact</a></li>
     </ul>
-  </div>
+    <div class="menu-toggle">☰ Menu</div>
+  </nav>
+  </header>
+  <!-- Mobile dropdown, toggled by home.js -->
+  <nav class="mobile-menu">
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="metal-sales.html">Metal Sales</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+    <li><a href="careers.html" >Careers</a></li>
+    <li><a href="contact.html" class="current">Contact</a></li>
+  </ul>
+  </nav>
 
   <main class="contact-content">
     <h1>Contact Us</h1>
@@ -108,16 +117,24 @@
       <p>We can build you the project of your dreams.</p>
       <a href="contact.html" class="btn chat-btn">Schedule a Chat</a>
       <div class="newsletter">
-        <p>Subscribe to receive inspiration, ideas, and news in your inbox.</p>
-        <form class="subscribe-form" action="#" method="get">
-          <input type="email" name="email" placeholder="Your email address" required />
-          <button type="submit" class="btn subscribe-btn">Subscribe</button>
-        </form>
-      </div>
       <div class="cta-contact">
-        <div class="cta-phone">+419-657-2510 <span class="hours">Round-the-clock</span></div>
+        <div class="cta-phone">+419-657-2510 
+        </div>
+          <span class="hours">8:00a.m.-4:00p.m.</span></div>
         <div class="cta-social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/BarnsUnlimitedltd/" aria-label="Facebook" class="social-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 320 512"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M279.14 288l14.22-92.66h-88.91V116.2c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.5 0 225.36 0C141.09 0 89.09 54.42 89.09 154.39v40.95H0v92.66h89.09V512h107.69V288z"/>
+            </svg>
+          </a>
+
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-youtube"></i></a>
           <a href="#"><i class="fab fa-pinterest"></i></a>
