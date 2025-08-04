@@ -516,13 +516,16 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*Facebook central location*/
-/* Center the icon container */
-.social-links {
-  text-align: center;            /* center inline-block children */
+/* Center the CTA social icons */
+.cta-social {
+  text-align: center;
 }
 
-/* Make the SVG itself a block and auto-margin it */
-.social-link svg {
-  display: block;
-  margin: 0 auto;                /* horizontally center the SVG */
+.cta-social .social-link {
+  display: inline-block;   /* ensure the link is inline-block */
+}
+
+.cta-social .social-link svg {
+  display: block;          /* make the SVG a block so margin:auto works */
+  margin: 0 auto;          /* center the SVG horizontally */
 }
