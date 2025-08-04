@@ -344,7 +344,7 @@ ul {
 }
 
 /* Mobile Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .top-bar-content {
     flex-direction: column;
     align-items: flex-start;
@@ -439,4 +439,90 @@ header.main-header .main-nav .nav-list a.current {
 .top-bar .social-links {
   flex: 1 1 auto;       /* default behavior, will sit beside .contact-info */
   text-align: right;    /* keep them aligned right */
+}
+
+
+
+/* === 1. Local Font Face Definitions: Open Sans & Open Sans Condensed === */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('fonts/OpenSans-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'),
+       url('fonts/OpenSans-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('fonts/OpenSans-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('fonts/OpenSans-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+       url('fonts/OpenSans-BoldItalic.woff') format('woff');
+}
+/* Open Sans Condensed (for headings) */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'),
+       url('fonts/OpenSansCondensed-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold Italic'), local('OpenSansCondensed-BoldItalic'),
+       url('fonts/OpenSansCondensed-BoldItalic.woff') format('woff');
+}
+
+/* === 2. Base styles and updated font settings === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;  /* stays as Open Sans for body text */
+  color: #333;
+  line-height: 1.6;
+  background: #fff;
+}
+/* Use Open Sans Condensed for all headings (replaces Montserrat) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans Condensed', sans-serif;  /* replaced Montserrat */
+  margin-bottom: 0.5em;
+}
+
+
+
+/*Facebook central location*/
+/* Center the icon container */
+.social-links {
+  text-align: center;            /* center inline-block children */
+}
+
+/* Make the SVG itself a block and auto-margin it */
+.social-link svg {
+  display: block;
+  margin: 0 auto;                /* horizontally center the SVG */
 }

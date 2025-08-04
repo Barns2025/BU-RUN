@@ -4,10 +4,10 @@ const mobileMenuServices = document.querySelector('.mobile-menu');
 menuToggleServices.addEventListener('click', () => {
   if (mobileMenuServices.style.display === 'block') {
     mobileMenuServices.style.display = 'none';
-    menuToggleServices.textContent = 'Menu';
+    menuToggleServices.textContent = '☰ Menu';
   } else {
     mobileMenuServices.style.display = 'block';
-    menuToggleServices.textContent = 'Close';
+    menuToggleServices.textContent = '✕ Close';
   }
 });
 // Smooth scrolling for anchor links within the page

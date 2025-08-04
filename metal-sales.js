@@ -4,10 +4,10 @@ const mobileMenuMetal = document.querySelector('.mobile-menu');
 menuToggleMetal.addEventListener('click', () => {
   if (mobileMenuMetal.style.display === 'block') {
     mobileMenuMetal.style.display = 'none';
-    menuToggleMetal.textContent = 'Menu';
+    menuToggleMetal.textContent = '☰ Menu';
   } else {
     mobileMenuMetal.style.display = 'block';
-    menuToggleMetal.textContent = 'Close';
+    menuToggleMetal.textContent = '✕ Close';
   }
 });
 // Form submission for subscribe (same as elsewhere)

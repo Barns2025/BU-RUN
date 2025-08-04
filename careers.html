@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barns Unlimited – Home</title>
-  <!-- Google Font (for offline, download and include locally if needed) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Site CSS -->
+  <title>Careers – Barns Unlimited</title>
+
+  <!-- Main site styles and shared components -->
   <link rel="stylesheet" href="home.css" />
-  <link rel="stylesheet" href="image-styles.css" />
+  <!-- Careers page specific styles -->
+  <link rel="stylesheet" href="careers.css" />
   <!-- Animations styles (if any animations included) -->
   <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="image-styles.css" />
+
 </head>
 <body>
-  <!-- Top bar with contacts and social links -->
+  <!-- Top bar with contact info and social links -->
   <div class="top-bar">
     <div class="top-bar-content">
       <div class="contact-info">
@@ -23,7 +25,6 @@
       </div>
       <a href="#" class="appointment-btn">Book appointment</a>
       <div class="social-links">
-        <!-- Social media icons (FontAwesome) -->
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
@@ -34,102 +35,97 @@
 
   <!-- Header with logo and navigation -->
   <header class="main-header">
-    <!-- Logo stays as is -->
     <div class="logo">
       <a href="home.html">
-        <img
-          src="images/BUlogo-1.png"
-          alt="Barns Unlimited logo"
-          width="100"
-          height="80"
-        />
+        <img src="images/BUlogo-1.png" alt="Barns Unlimited logo" width="100" height="80" />
       </a>
     </div>
-
-    <!-- Desktop navigation -->
     <nav class="main-nav">
       <ul class="nav-list">
-        <li><a href="home.html" class="current">Home</a></li>
+        <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="metal-sales.html">Metal Sales</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="careers.html" >Careers</a></li>
+        <li><a href="careers.html" class="current">Careers</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="menu-toggle">☰ Menu</div>
     </nav>
-    </header>
-    <!-- Mobile dropdown, toggled by home.js -->
-    <nav class="mobile-menu">
+  </header>
+
+  <!-- Mobile menu (hidden by default, toggled via JS) -->
+  <nav class="mobile-menu">
     <ul>
-      <li><a href="home.html" class="current">Home</a></li>
+      <li><a href="home.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="metal-sales.html">Metal Sales</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="testimonials.html">Testimonials</a></li>
-      <li><a href="careers.html" >Careers</a></li>
+      <li><a href="careers.html" class="current">Careers</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    </nav>
-  </div>
+  </nav>
 
-
-
-
-
-  <!-- Hero section with background image and tagline -->
-  <section class="hero" style="background-image: url('images/hero.jpg');">
+  <!-- Hero section with background image and headline -->
+  <section class="hero careers-hero animate-on-scroll">
     <div class="hero-overlay">
-      <h1>We specialize in Design, Construction, and Restoration of high-quality barns</h1>
-      <p class="subtitle">Metal Sales. Design your barns with the experts.</p>
-      <a href="contact.html" class="btn primary-btn">Get Started</a>
+      <h1>Join Our Team</h1>
+      <p class="subtitle">Build your future with Barns Unlimited</p>
     </div>
   </section>
 
-  <!-- Introduction / Mission section -->
-  <section class="intro-section">
-    <div class="intro-text">
-      <h2>Welcome to Barns Unlimited</h2>
-      <p><strong>Barns Unlimited</strong> is a family-owned and operated barn construction company in Lima, Ohio. We are committed to sustainable practices and historic preservation, with years of proven experience in barn restoration and repair. We design, construct, and restore quality barns tailored to your needs, bringing your dream barn to life with care and craftsmanship.</p>
-    </div>
-  </section>
+  <!-- Main content area for Careers page -->
+  <main class="careers-content">
+    <!-- Introductory section about working at the company -->
+    <section class="careers-intro animate-on-scroll">
+      <h2>Careers at Barns Unlimited</h2>
+      <p>Barns Unlimited is more than just a barn-building company – it’s a family. We foster a work environment that values <strong>teamwork</strong>, <strong>craftsmanship</strong>, and personal growth. Whether you're a seasoned builder or just starting out, you'll work on meaningful projects and be part of a supportive community.</p>
+    </section>
 
-  <!-- Services summary / What We Offer preview -->
-  <section class="services-summary">
-    <h2>What We Offer</h2>
-    <div class="services-grid">
-      <div class="service-item">
-        <img 
-          src="images/Pole-Barns.png"   alt="Pole Barn"    />
-       
-        <h3>Pole Barns</h3>
-        <p>Durable post-frame buildings for farms, homes, and multi-use facilities.</p>
-        <a href="services.html#pole-barns" class="read-more">Learn more</a>
+    <!-- Why work with us / company values for employees -->
+    <section class="why-work animate-on-scroll">
+      <h2>Why Work With Us?</h2>
+      <ul>
+        <li><strong>Family Atmosphere:</strong> As a family-owned business, we treat our team like family. You’ll join a close-knit crew that supports each other.</li>
+        <li><strong>Craftsmanship & Pride:</strong> Take pride in quality work that preserves history and builds the future. Every project is a chance to showcase and hone your skills.</li>
+        <li><strong>Growth Opportunities:</strong> We invest in training and hands-on experience, helping you expand your skills and advance in your career.</li>
+        <li><strong>Community Impact:</strong> Build structures that serve local farms, families, and businesses — see the tangible impact of your work in our community.</li>
+      </ul>
+    </section>
+
+    <!-- Open positions section -->
+    <section class="open-positions animate-on-scroll">
+      <h2>Current Openings</h2>
+      <div class="positions-list">
+        <!-- Example job opening 1 -->
+        <div class="position">
+          <h3>Barn Construction Crew Member</h3>
+          <p>Hands-on role in constructing and assembling barn structures. Seeking reliable individuals with a strong work ethic and willingness to learn. Construction experience is a plus.</p>
+          <p><strong>Location:</strong> Lima, OH</p>
+          <a href="mailto:info@barnsunlimited.com?subject=Application%20-%20Construction%20Crew" class="apply-btn">Apply Now</a>
+        </div>
+        <!-- Example job opening 2 -->
+        <div class="position">
+          <h3>Project Manager (Construction)</h3>
+          <p>Oversee barn construction projects from planning to completion. Requires excellent leadership, communication, and project management skills. Experience in construction management preferred.</p>
+          <p><strong>Location:</strong> Lima, OH</p>
+          <a href="mailto:info@barnsunlimited.com?subject=Application%20-%20Project%20Manager" class="apply-btn">Apply Now</a>
+        </div>
+        <!-- Example job opening 3 -->
+        <div class="position">
+          <h3>Sales & Customer Service Representative</h3>
+          <p>Engage with customers to understand their needs and guide them through our offerings. Looking for a friendly communicator with experience in sales or customer service.</p>
+          <p><strong>Location:</strong> Lima, OH</p>
+          <a href="mailto:info@barnsunlimited.com?subject=Application%20-%20Sales%20Representative" class="apply-btn">Apply Now</a>
+        </div>
       </div>
-      <div class="service-item">
-        <img   src="images/steel-truss-hybrid.png"   alt="Steel Truss Hybrid Barn"   />
-        <h3>Steel Truss Hybrids</h3>
-        <p>Classic wooden posts with rugged steel truss's for wide, open interiors.</p>
-        <a href="services.html#steel-truss" class="read-more">Learn more</a>
-      </div>
-      <div class="service-item">
-        <img src="images/vintage barns.jpeg" alt="Vintage Barns">
-        <h3>Vintage Barns</h3>
-        <p>Restoration and replication of historic barns, preserving heritage and charm.</p>
-        <a href="services.html#vintage-barns" class="read-more">Learn more</a>
-      </div>
-      <div class="service-item">
-        <img
-          src="images/DIY-Packages.jpeg"    alt="DIY Barn Package"  />
-        <h3>DIY Barn Packages</h3>
-        <p>Custom-designed barn kits and plans for those who prefer to build it themselves.</p>
-        <a href="services.html#diy-packages" class="read-more">Learn more</a>
-      </div>
-    </div>
-  </section>
+      <!-- General note for applicants -->
+      <p class="apply-note">Don’t see a role that fits you? We’re always looking for talented people – feel free to send your resume to <a href="mailto:info@barnsunlimited.com">info@barnsunlimited.com</a>.</p>
+    </section>
+  </main>
 
   <!-- CTA and footer -->
   <section class="cta-section">
@@ -194,7 +190,9 @@
     </div>
   </footer>
 
-  <!-- Site JavaScript -->
+  <!-- JavaScript files -->
+  <script src="subscribe.js"></script>
+  <script src="animations.js"></script>
   <script src="home.js"></script>
 </body>
 </html>
