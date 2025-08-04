@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Barns Unlimited</title>
+
+  <!-- 1) Shared header/nav styles (from home.css or your common CSS) -->
+  <link rel="stylesheet" href="home.css" />
+
+  <!-- 2) About page–specific overrides -->
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="image-styles.css" />
+</head>
+<body>
+  <!-- Include the same header and nav as on Home page -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <div class="contact-info">
+        <span>Email: <a href="mailto:sales@barnsunlimited.com">sales@barnsunlimited.com</a></span>
+        <span>Call us: <a href="tel:+14196572510">+419-657-2510</a></span>
+      </div>
+      <a href="#" class="appointment-btn">Book appointment</a>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Header with logo and navigation -->
+  <header class="main-header">
+    <div class="logo">
+      <a href="home.html">
+        <img src="images/BUlogo-1.png" alt="Barns Unlimited logo" width="100" height="80" />
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html" class="current">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="metal-sales.html">Metal Sales</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+       <div class="menu-toggle">☰ Menu</div>
+    </nav>
+  </header>
+
+  <!-- Mobile dropdown, toggled by home.js -->
+  <nav class="mobile-menu">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html" class="current">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="metal-sales.html">Metal Sales</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- About page content -->
+  <main class="about-content">
+    <section class="about-intro">
+      <h1>About Barns Unlimited</h1>
+      <p><strong>Barns Unlimited</strong> was founded with a passion for quality barn building and restoration. We are a family-owned company based in Lima, Ohio, and we pride ourselves on combining <em>old-fashioned craftsmanship</em> with modern building techniques. Our team has decades of experience in designing, constructing, and refurbishing barns of all kinds.</p>
+      <p>From humble beginnings, we have grown into a full-service barn construction and renovation firm. We specialize in pole barns, vintage barn restorations, and even steel-frame hybrid structures. No project is too large or too small – whether you need a simple storage barn or a sprawling equestrian facility, our experts will ensure the result exceeds your expectations.</p>
+    </section>
+
+    <section class="mission-values">
+      <h2>Our Mission & Values</h2>
+      <p><strong>Commitment to Sustainability:</strong> We incorporate sustainable practices and materials in our projects whenever possible, ensuring your barn is environmentally responsible without compromising on quality.</p>
+      <p><strong>Historic Preservation:</strong> We have a deep respect for historic barns. Our restoration services aim to preserve the heritage and character of vintage barns while reinforcing them for continued use. We love breathing new life into old structures.</p>
+      <p><strong>Quality Craftsmanship:</strong> Each barn we build or repair is treated as if it were our own. Quality materials and attention to detail are the hallmarks of Barns Unlimited. Our in-house crew takes pride in their work, from framing to the final finishes.</p>
+      <p><strong>Customer Satisfaction:</strong> We believe in honest communication and going the extra mile for our clients. From initial design consultation to final walkthrough, we ensure you are informed and delighted at every step of the process.</p>
+    </section>
+
+    <section class="why-choose">
+      <h2>Why Choose Barns Unlimited?</h2>
+      <ul>
+        <li><strong>Experience:</strong> With over 20 years in the industry, we have the knowledge to tackle any barn project.</li>
+        <li><strong>Full-Service:</strong> We handle everything – design, site preparation, construction, and finishing touches – providing a turnkey solution.</li>
+        <li><strong>Licensed & Insured:</strong> Our team is fully licensed and insured, giving you peace of mind during the building process.</li>
+        <li><strong>Local & Family-Owned:</strong> As a local business, we care about our community and treat our customers like neighbors.</li>
+      </ul>
+      <p>When you choose Barns Unlimited, you're not just getting a contractor – you're getting a dedicated partner to make your dream barn a reality. We are proud of the reputation we have built and invite you to become part of our story.</p>
+    </section>
+  </main>
+
+  <!-- Reuse the CTA and footer sections as on Home page -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>You dream it, we design it</h2>
+      <p>We can build you the project of your dreams.</p>
+      <a href="contact.html" class="btn chat-btn">Schedule a Chat</a>
+      <div class="newsletter">
+        <p>Subscribe to receive inspiration, ideas, and news in your inbox.</p>
+        <form class="subscribe-form" action="#" method="get">
+          <input type="email" name="email" placeholder="Your email address" required />
+          <button type="submit" class="btn subscribe-btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-phone">+419-657-2510 <span class="hours">Round-the-clock</span></div>
+        <div class="cta-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-col about-col">
+        <h3>About Us</h3>
+        <p>Your custom barn, built with care and family pride! We combine old-fashioned craftsmanship with modern techniques to deliver superior barns that stand the test of time.</p>
+      </div>
+      <div class="footer-col links-col">
+        <h3>What We Offer</h3>
+        <ul>
+          <li><a href="services.html#pole-barns">Pole Barns</a></li>
+          <li><a href="services.html#steel-truss">Steel Truss Hybrids</a></li>
+          <li><a href="services.html#vintage-barns">Vintage Barns</a></li>
+          <li><a href="services.html#diy-packages">DIY Packages</a></li>
+          <li><a href="services.html#commercial">Commercial Buildings</a></li>
+          <li><a href="services.html#barndominiums">Barndominiums</a></li>
+        </ul>
+      </div>
+      <div class="footer-col subscribe-col">
+        <h3>Subscribe</h3>
+        <p>Get inspiration, ideas, and Barns Unlimited news in your inbox.</p>
+        <form class="subscribe-form-footer" action="#" method="get">
+          <input type="email" name="email" placeholder="Email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Barns Unlimited. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="about.js"></script>
+
+    <script src="about.js"></script>
+    <!-- This wires up the ☰ Menu button -->
+   <!-- 2) Hamburger toggle & mobile‐menu script -->
+   <script src="home.js"></script>
+
+</body>
+</html>
+

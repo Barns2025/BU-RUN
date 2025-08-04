@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Barns Unlimited</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="stylesheet" href="image-styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <div class="contact-info">
+        <span>Email: <a href="mailto:sales@barnsunlimited.com">sales@barnsunlimited.com</a></span>
+        <span>Call us: <a href="tel:+14196572510">+419-657-2510</a></span>
+      </div>
+      <a href="#" class="appointment-btn">Book appointment</a>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+  </div>
+  <header class="main-header">
+    <!-- BU Logo image -->
+    <div class="logo">
+      <a href="home.html">
+        <img
+          src="images/BUlogo-1.png"
+          alt="Barns Unlimited logo"
+          width="100"
+          height="80"
+        />
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="metal-sales.html">Metal Sales</a></li>
+        <li><a href="gallary.html" class="current">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">Menu</div>
+    </nav>
+  </header>
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="metal-sales.html">Metal Sales</a></li>
+      <li><a href="gallary.html" class="current">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="gallery-content">
+    <h1>Project Gallery</h1>
+    <p>Browse a few examples of our recent barn projects. From new constructions to restorations, these photos showcase the quality and craftsmanship Barns Unlimited delivers.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/Restoration.jpeg" alt="Restoration Project" />
+      </div>
+
+      <div id="myElement" hidden>
+      <div class="gallery-item">
+        <img src="images/Commercial project.png" alt="Commercial Project" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/barn3.jpg" alt="Barn project 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/hero.jpg" alt="Barn project 4" />
+      </div>
+      <!-- additional images could be added similarly -->
+      </div>
+    </div>
+    
+    <p class="gallery-note">(*Click on any image to view it larger.*)</p>
+  </main>
+
+  <!-- CTA and footer -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>You dream it, we design it</h2>
+      <p>We can build you the project of your dreams.</p>
+      <a href="contact.html" class="btn chat-btn">Schedule a Chat</a>
+      <div class="newsletter">
+        <p>Subscribe to receive inspiration, ideas, and news in your inbox.</p>
+        <form class="subscribe-form" action="#" method="get">
+          <input type="email" name="email" placeholder="Your email address" required />
+          <button type="submit" class="btn subscribe-btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="cta-contact">
+        <div class="cta-phone">+419-657-2510 <span class="hours">Round-the-clock</span></div>
+        <div class="cta-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-col about-col">
+        <h3>About Us</h3>
+        <p>Your custom barn, built with care and family pride! We combine old-fashioned craftsmanship with modern techniques to deliver superior barns that stand the test of time.</p>
+      </div>
+      <div class="footer-col links-col">
+        <h3>What We Offer</h3>
+        <ul>
+          <li><a href="services.html#pole-barns">Pole Barns</a></li>
+          <li><a href="services.html#steel-truss">Steel Truss Hybrids</a></li>
+          <li><a href="services.html#vintage-barns">Vintage Barns</a></li>
+          <li><a href="services.html#diy-packages">DIY Packages</a></li>
+          <li><a href="services.html#commercial">Commercial Buildings</a></li>
+          <li><a href="services.html#barndominiums">Barndominiums</a></li>
+        </ul>
+      </div>
+      <div class="footer-col subscribe-col">
+        <h3>Subscribe</h3>
+        <p>Get inspiration, ideas, and Barns Unlimited news in your inbox.</p>
+        <form class="subscribe-form-footer" action="#" method="get">
+          <input type="email" name="email" placeholder="Email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Barns Unlimited. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
