@@ -4,91 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Careers – Barns Unlimited</title>
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+    integrity="sha512-cefs7eY6ZlDDUrYgjaKZn+2zEiih3+y/zjI+uSk/n+wQ7YltCkfIRwURbP0OMI+wpd/+FZEAp0nqS+cXKQjDkg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+    integrity="sha512-+UWOzPZu4Qb9WcuoGZSKK1UL7R+bL5cKjAoJcVHvlCCDBtEl2+ydmT9qIj8bN6PyLEO8Bc9ZniqFf8wxDkPjiw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-  <!-- Main site styles and shared components -->
+  <!-- Core Styles -->
   <link rel="stylesheet" href="home.css" />
-  <!-- Careers page specific styles -->
   <link rel="stylesheet" href="careers.css" />
-  <!-- Animations styles (if any animations included) -->
-  <link rel="stylesheet" href="animations.css" />
-  <link rel="stylesheet" href="home.css" />
   <link rel="stylesheet" href="image-styles.css" />
-
+  <!-- Scroll Animation Styles -->
+  <link rel="stylesheet" href="animations.css" />
 </head>
 <body>
   <!-- Top bar with contact info and social links -->
-  <div class="top-bar">
-    <div class="top-bar-content">
-      <div class="contact-info">
+  <div class="top-bar stack-item">
+    <div class="top-bar-content stack-item">
+      <div class="contact-info stack-item">
         <span>Email: <a href="mailto:sales@barnsunlimited.com">sales@barnsunlimited.com</a></span>
         <span>Call us: <a href="tel:+14196572510">+419-657-2510</a></span>
       </div>
-      <a href="#" class="appointment-btn">Book appointment</a>
-      <div class="social-links">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+      <a href="#" class="appointment-btn stack-item">Book appointment</a>
+      <div class="social-links stack-item">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
       </div>
     </div>
   </div>
 
   <!-- Header with logo and navigation -->
-  <header class="main-header">
-    <div class="logo">
+  <header class="main-header stack-item">
+    <div class="logo stack-item">
       <a href="home.html">
         <img src="images/BUlogo-1.png" alt="Barns Unlimited logo" width="100" height="80" />
       </a>
     </div>
-    <nav class="main-nav">
-      <ul class="nav-list">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="metal-sales.html">Metal Sales</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="careers.html" class="current">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
+    <nav class="main-nav stack-item">
+      <ul class="nav-list stack-item">
+        <li><a href="home.html" class="stack-item">Home</a></li>
+        <li><a href="about.html" class="stack-item">About</a></li>
+        <li><a href="services.html" class="stack-item">Services</a></li>
+        <li><a href="metal-sales.html" class="stack-item">Metal Sales</a></li>
+        <li><a href="gallery.html" class="stack-item">Gallery</a></li>
+        <li><a href="testimonials.html" class="stack-item">Testimonials</a></li>
+        <li><a href="careers.html" class="current stack-item">Careers</a></li>
+        <li><a href="contact.html" class="stack-item">Contact</a></li>
       </ul>
-      <div class="menu-toggle">☰ Menu</div>
+      <div class="menu-toggle stack-item">☰ Menu</div>
     </nav>
   </header>
 
-  <!-- Mobile menu (hidden by default, toggled via JS) -->
-  <nav class="mobile-menu">
+  <!-- Mobile menu (hidden by default) -->
+  <nav class="mobile-menu stack-item">
     <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="metal-sales.html">Metal Sales</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="testimonials.html">Testimonials</a></li>
-      <li><a href="careers.html" class="current">Careers</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="home.html" class="stack-item">Home</a></li>
+      <li><a href="about.html" class="stack-item">About</a></li>
+      <li><a href="services.html" class="stack-item">Services</a></li>
+      <li><a href="metal-sales.html" class="stack-item">Metal Sales</a></li>
+      <li><a href="gallery.html" class="stack-item">Gallery</a></li>
+      <li><a href="testimonials.html" class="stack-item">Testimonials</a></li>
+      <li><a href="careers.html" class="current stack-item">Careers</a></li>
+      <li><a href="contact.html" class="stack-item">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero section with background image and headline -->
-  <section class="hero careers-hero animate-on-scroll">
-    <div class="hero-overlay">
-      <h1>Join Our Team</h1>
-      <p class="subtitle">Build your future with Barns Unlimited</p>
+  <section class="hero careers-hero stack-item" style="background-image: url('images/careers-hero.jpg');">
+    <div class="hero-overlay stack-item">
+      <h1 class="stack-item">Join Our Team</h1>
+      <p class="subtitle stack-item">Build your future with Barns Unlimited</p>
     </div>
   </section>
 
   <!-- Main content area for Careers page -->
-  <main class="careers-content">
+  <main class="careers-content stack-item">
     <!-- Introductory section about working at the company -->
-    <section class="careers-intro animate-on-scroll">
-      <h2>Careers at Barns Unlimited</h2>
-      <p>Barns Unlimited is more than just a barn-building company – it’s a family. We foster a work environment that values <strong>teamwork</strong>, <strong>craftsmanship</strong>, and personal growth. Whether you're a seasoned builder or just starting out, you'll work on meaningful projects and be part of a supportive community.</p>
+    <section class="careers-intro stack-item">
+      <h2 class="stack-item">Careers at Barns Unlimited</h2>
+      <p class="stack-item">Barns Unlimited is more than just a barn-building company – it’s a family. We foster a work environment that values <strong>teamwork</strong>, <strong>craftsmanship</strong>, and personal growth. Whether you're a seasoned builder or just starting out, you'll work on meaningful projects and be part of a supportive community.</p>
     </section>
 
     <!-- Why work with us / company values for employees -->
-    <section class="why-work animate-on-scroll">
-      <h2>Why Work With Us?</h2>
-      <ul>
+    <section class="why-work stack-item">
+      <h2 class="stack-item">Why Work With Us?</h2>
+      <ul class="stack-item">
         <li><strong>Family Atmosphere:</strong> As a family-owned business, we treat our team like family. You’ll join a close-knit crew that supports each other.</li>
         <li><strong>Craftsmanship & Pride:</strong> Take pride in quality work that preserves history and builds the future. Every project is a chance to showcase and hone your skills.</li>
         <li><strong>Growth Opportunities:</strong> We invest in training and hands-on experience, helping you expand your skills and advance in your career.</li>
@@ -97,98 +109,42 @@
     </section>
 
     <!-- Open positions section -->
-    <section class="open-positions animate-on-scroll">
-      <h2>Current Openings</h2>
-      <div class="positions-list">
-        <!-- Example job opening 1 -->
-        <div class="position">
-          <h3>Barn Construction Crew Member</h3>
-          <p>Hands-on role in constructing and assembling barn structures. Seeking reliable individuals with a strong work ethic and willingness to learn. Construction experience is a plus.</p>
-          <p><strong>Location:</strong> Lima, OH</p>
-          <a href="mailto:info@barnsunlimited.com?subject=Application%20-%20Construction%20Crew" class="apply-btn">Apply Now</a>
+    <section class="open-positions stack-item">
+      <h2 class="stack-item">Current Openings</h2>
+      <div class="positions-list stack-item">
+        <div class="position stack-item">
+          <h3 class="stack-item">Barn Construction Crew Member</h3>
+          <p class="stack-item">Hands-on role in constructing and assembling barn structures. Seeking reliable individuals with a strong work ethic and willingness to learn. Construction experience is a plus.</p>
+          <p class="stack-item"><strong>Location:</strong> Lima, OH</p>
+          <a href="mailto:info@barnsunlimited.com?subject=Application%20-%20Construction%20Crew" class="apply-btn stack-item">Apply Now</a>
         </div>
-        <!-- Example job opening 2 -->
-        <div class="position">
-          <h3>Project Manager (Construction)</h3>
-          <p>Oversee barn construction projects from planning to completion. Requires excellent leadership, communication, and project management skills. Experience in construction management preferred.</p>
-          <p><strong>Location:</strong> Lima, OH</p>
-          <a href="mailto:info@barnsunlimited.com?subject=Application%20-%20Project%20Manager" class="apply-btn">Apply Now</a>
+        <div class="position stack-item">
+          <h3 class="stack-item">Project Manager (Construction)</h3>
+          <p class="stack-item">Oversee barn construction projects from planning to completion. Requires excellent leadership, communication, and project management skills. Experience in construction management preferred.</p>
+          <p class="stack-item"><strong>Location:</strong> Lima, OH</p>
+          <a href="mailto:info@barnsunlimited.com?subject=Application%20-%20Project%20Manager" class="apply-btn stack-item">Apply Now</a>
         </div>
-        <!-- Example job opening 3 -->
-        <div class="position">
-          <h3>Sales & Customer Service Representative</h3>
-          <p>Engage with customers to understand their needs and guide them through our offerings. Looking for a friendly communicator with experience in sales or customer service.</p>
-          <p><strong>Location:</strong> Lima, OH</p>
-          <a href="mailto:info@barnsunlimited.com?subject=Application%20-%20Sales%20Representative" class="apply-btn">Apply Now</a>
+        <div class="position stack-item">
+          <h3 class="stack-item">Sales & Customer Service Representative</h3>
+          <p class="stack-item">Engage with customers to understand their needs and guide them through our offerings. Looking for a friendly communicator with experience in sales or customer service.</p>
+          <p class="stack-item"><strong>Location:</strong> Lima, OH</p>
+          <a href="mailto:info@barnsunlimited.com?subject=Application%20-%20Sales%20Representative" class="apply-btn stack-item">Apply Now</a>
         </div>
       </div>
-      <!-- General note for applicants -->
-      <p class="apply-note">Don’t see a role that fits you? We’re always looking for talented people – feel free to send your resume to <a href="mailto:info@barnsunlimited.com">info@barnsunlimited.com</a>.</p>
+      <p class="apply-note stack-item">Don’t see a role that fits you? We’re always looking for talented people – feel free to send your resume to <a href="mailto:info@barnsunlimited.com" class="stack-item">info@barnsunlimited.com</a>.</p>
     </section>
   </main>
 
-  <!-- CTA and footer -->
-  <section class="cta-section">
-    <div class="cta-content">
-      <h2>You dream it, we design it</h2>
-      <p>We can build you the project of your dreams.</p>
-      <a href="contact.html" class="btn chat-btn">Schedule a Chat</a>
-      <div class="newsletter">
-      <div class="cta-contact">
-        <div class="cta-phone">+419-657-2510 
-        </div>
-          <span class="hours">8:00a.m.-4:00p.m.</span></div>
-        <div class="cta-social">
-          <a href="https://www.facebook.com/BarnsUnlimitedltd/" aria-label="Facebook" class="social-link">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 320 512"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path d="M279.14 288l14.22-92.66h-88.91V116.2c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.5 0 225.36 0C141.09 0 89.09 54.42 89.09 154.39v40.95H0v92.66h89.09V512h107.69V288z"/>
-            </svg>
-          </a>
-
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="site-footer">
-    <div class="footer-columns">
-      <div class="footer-col about-col">
-        <h3>About Us</h3>
-        <p>Your custom barn, built with care and family pride! We combine old-fashioned craftsmanship with modern techniques to deliver superior barns that stand the test of time.</p>
-      </div>
-      <div class="footer-col links-col">
-        <h3>What We Offer</h3>
-        <ul>
-          <li><a href="services.html#pole-barns">Pole Barns</a></li>
-          <li><a href="services.html#steel-truss">Steel Truss Hybrids</a></li>
-          <li><a href="services.html#vintage-barns">Vintage Barns</a></li>
-          <li><a href="services.html#diy-packages">DIY Packages</a></li>
-          <li><a href="services.html#commercial">Commercial Buildings</a></li>
-          <li><a href="services.html#barndominiums">Barndominiums</a></li>
-        </ul>
-      </div>
-      <div class="footer-col subscribe-col">
-        <h3>Subscribe</h3>
-        <p>Get inspiration, ideas, and Barns Unlimited news in your inbox.</p>
-        <form class="subscribe-form-footer" action="#" method="get">
-          <input type="email" name="email" placeholder="Email address" required />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Barns Unlimited. All rights reserved.</p>
-    </div>
-  </footer>
+  <!-- Footer Include -->
+  <div data-include="footer.html" class="stack-item"></div>
+  <script>
+    document.querySelectorAll('[data-include]').forEach(el => {
+      fetch(el.getAttribute('data-include'))
+        .then(res => res.text())
+        .then(html => { el.outerHTML = html; })
+        .catch(err => console.error('Include failed:', err));
+    });
+  </script>
 
   <!-- JavaScript files -->
   <script src="subscribe.js"></script>

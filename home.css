@@ -1,3 +1,21 @@
+:root {
+  /* 1) Pick your base color in HSL */
+  --primary-h: 230deg;    /* hue: 210° is a classic navy-blue */
+  --primary-s: 80%;       /* saturation */
+  --primary-l: 45%;       /* lightness */
+
+  /* 2) This is your “hue shift” — start at 0deg (no change) */
+  --hue-shift: 0deg;
+
+  /* 3) Compute the actual color by adding the shift to the base hue */
+  --primary-color: hsl(
+    calc(var(--primary-h) + var(--hue-shift)),
+    var(--primary-s),
+    var(--primary-l)
+  );
+}
+
+
 /* Base styles and font settings */
 * {
   box-sizing: border-box;
@@ -15,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 a {
-  color: #B00020;
+  color: #fff;
   text-decoration: none;
 }
 a:hover {
@@ -46,14 +64,14 @@ ul {
   color: #f0f0f0;
 }
 .appointment-btn {
-  background: #B00020;
+  background: var(--primary-color);
   color: #fff;
   padding: 5px 10px;
   border-radius: 3px;
   font-weight: 600;
 }
 .appointment-btn:hover {
-  background: #930018;
+  background: var(--primary-color);
 }
 .social-links a {
   color: #f0f0f0;
@@ -92,7 +110,7 @@ ul {
   padding: 8px 4px;
 }
 .nav-list a.current {
-  color: #B00020;
+  color: var(--primary-color);
 }
 .menu-toggle {
   display: none;
@@ -128,14 +146,14 @@ ul {
 }
 .primary-btn {
   display: inline-block;
-  background: #B00020;
+  background: var(--primary-color);
   color: #fff;
   padding: 12px 20px;
   font-weight: 700;
   border-radius: 3px;
 }
 .primary-btn:hover {
-  background: #930018;
+  background:var(--primary-color);
 }
 
 /* Intro section */
@@ -196,7 +214,7 @@ ul {
 .service-item .read-more {
   font-weight: 600;
   font-size: 0.95em;
-  color: #B00020;
+  color: var(--primary-color);
 }
 
 /* Call-to-action Section */
@@ -217,7 +235,8 @@ ul {
 }
 .cta-section .chat-btn {
   display: inline-block;
-  background: #B00020;
+  background: var(--primary-color)
+;
   color: #fff;
   padding: 10px 16px;
   margin-bottom: 20px;
@@ -225,7 +244,8 @@ ul {
   font-weight: 700;
 }
 .cta-section .chat-btn:hover {
-  background: #930018;
+  background:var(--primary-color)
+;
 }
 .newsletter {
   max-width: 500px;
@@ -252,13 +272,15 @@ ul {
   font-size: 0.95em;
   border: none;
   border-radius: 0 3px 3px 0;
-  background: #B00020;
+  background: var(--primary-color)
+;
   color: #fff;
   cursor: pointer;
 }
 .subscribe-form button:hover,
 .subscribe-form-footer button:hover {
-  background: #930018;
+  background:var(--primary-color)
+;
 }
 .cta-contact {
   margin-top: 20px;
@@ -281,51 +303,7 @@ ul {
   font-size: 1.1em;
 }
 
-/* Footer */
-.site-footer {
-  background: #222;
-  color: #ccc;
-  padding: 30px 20px;
-}
-.footer-columns {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-.footer-col {
-  flex: 1;
-  min-width: 200px;
-}
-.footer-col h3 {
-  color: #fff;
-  margin-bottom: 0.5em;
-  font-size: 1.1em;
-}
-.footer-col p {
-  font-size: 0.95em;
-  line-height: 1.5;
-}
-.footer-col ul {
-  padding: 0;
-}
-.footer-col ul li {
-  margin-bottom: 0.4em;
-}
-.footer-col ul li a {
-  color: #ccc;
-  font-size: 0.95em;
-}
-.footer-col ul li a:hover {
-  color: #fff;
-}
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 0.85em;
-  color: #777;
-}
+
 
 /* Mobile menu - hidden by default */
 .mobile-menu {
@@ -371,6 +349,29 @@ ul {
     align-items: center;
   }
 }
+
+
+@media (max-width: 1100px) {
+  /* Center the dropdown menu items (not the menu-toggle button) */
+  .mobile-menu ul {
+    display: flex;               /* switch to flex so we can align */
+    flex-direction: column;      /* stack vertically */
+    align-items: center;         /* center each <li> horizontally */
+    padding: 10px 0;             /* adjust top/bottom padding if desired */
+  }
+
+  .mobile-menu li {
+    width: auto;                 /* let items size to content */
+    margin: 8px 0;               /* you already have 10px; tweak as needed */
+  }
+
+  .mobile-menu li a {
+    display: block;              /* ensure full clickable area */
+    text-align: center;          /* center the link text */
+    width: 100%;                 /* optional: make the block fill the menu width */
+  }
+}
+
 /* —— Nav reset & font unify —— */
 
 /* Remove bullets and reset spacing on both desktop & mobile nav lists */
@@ -401,18 +402,22 @@ header.main-header .main-nav .nav-list a,
 header.main-header .main-nav .nav-list a:hover,
 .mobile-menu a:hover,
 .mobile-menu a.current {
-  color: #B00020; /* or whatever your hover color is */
+  color: var(--primary-color)
+; /* or whatever your hover color is */
 }
 /*—— Highlight “current” nav item on desktop ——*/
 header.main-header .main-nav .nav-list a.current {
-  color: #B00020;                /* your accent color */
-  border-bottom: 2px solid #B00020;
+  color: var(--primary-color)
+;                /* your accent color */
+  border-bottom: 2px solid var(--primary-color)
+;
   padding-bottom: 4px;           /* make room for the underline */
 }
 
 /*—— Highlight “current” nav item in mobile dropdown ——*/
 .mobile-menu a.current {
-  color: #B00020;                /* same accent color */
+  color: var(--primary-color)
+;                /* same accent color */
   background: #f9f9f9;           /* light grey highlight */
 }
 
@@ -525,4 +530,117 @@ h1, h2, h3, h4, h5, h6 {
 .social-link svg {
   display: block;
   margin: 0 auto;                /* horizontally center the SVG */
+}
+/* Base footer-column layout (from home.css) */
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}                               /* :contentReference[oaicite:3]{index=3} */
+
+
+
+
+
+
+
+
+/* makes things hover when you hover over them haha 
+*:hover{transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,0.2);transition:transform .2s ease,box-shadow .2s ease;}
+*:not([style*="border-radius"]) {
+  border-radius: 8px;
+}
+.top-bar *:hover{transform:translateY(-1px);box-shadow:0 4px 8px rgba(0,0,0,0.2);transition:transform .2s ease,box-shadow .2s ease;}
+*/
+
+
+/* makes things hover when you scroll-not needing a mouse lol*/
+/* default state */
+.box {
+  transform: translateY(0);
+  box-shadow: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+  border-radius: 8px; /* you already had this globally */
+}
+
+/* “in-view” state: same as your :hover rules */
+.box.in-view {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+.social-links {
+  text-align: center;            /* center inline-block children */
+}
+
+/* Make the SVG itself a block and auto-margin it */
+.social-link svg {
+  display: block;
+  margin: 0 auto;                /* horizontally center the SVG */
+}
+
+
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-letter {
+  display: inline-flex;
+  align-items: left;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #000;
+  text-decoration: black;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+
+
+
+/* Remove any bubble or background on the social links */
+.contact-col .social-links .social-letter {
+  background: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  display: block;        /* one per line */
+  text-align: left;      /* align with your other contact text */
+}
+
+/* Disable any hover background or color-shift */
+.contact-col .social-links .social-letter:hover {
+  background: none !important;
+  color: #fff !important;  /* keep the text black on hover */
+  transform: none !important;
+  text-decoration: underline; /* if you want a subtle hover cue */
+}
+/* Make the social-links wrapper span the full width of its column */
+.contact-col .social-links {
+  width: 100%;
+}
+
+.contact-col .social-links,
+.contact-col .social-links .social-links {
+  width: 100%;
+}
+
+/* Stack scroll animation */
+.stack-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.stack-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }

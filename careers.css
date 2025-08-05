@@ -28,7 +28,8 @@
 .careers-intro h2 {
   font-size: 1.8em;
   margin-bottom: 0.5em;
-  color: #B00020; /* accent color for section titles */
+  color: var(--primary-color)
+; /* accent color for section titles */
 }
 .careers-intro p {
   font-size: 1.1em;
@@ -48,7 +49,8 @@
   font-size: 1.6em;
   text-align: center;
   margin-bottom: 1em;
-  color: #B00020;
+  color: var(--primary-color)
+;
 }
 .why-work ul {
   list-style: none;
@@ -67,7 +69,8 @@
 .why-work li::before {
   content: "■";
   font-size: 0.7em;
-  color: #B00020;
+  color:var(--primary-color)
+;
   position: absolute;
   left: 0;
   top: 0.3em;
@@ -81,7 +84,8 @@
   font-size: 1.6em;
   text-align: center;
   margin-bottom: 1em;
-  color: #B00020;
+  color:var(--primary-color)
+;
 }
 .positions-list {
   display: flex;
@@ -111,7 +115,8 @@
 .apply-btn {
   display: inline-block;
   padding: 8px 15px;
-  background: #B00020;
+  background: var(--primary-color)
+;
   color: #fff;
   text-decoration: none;
   border-radius: 3px;
@@ -119,7 +124,8 @@
   margin-top: 5px;
 }
 .apply-btn:hover {
-  background: #930018;
+  background:var(--primary-color)
+;
 }
 
 /* Note below the positions list */
@@ -131,8 +137,10 @@
 
 /* Highlight current page in nav (overrides in case not covered by home.css) */
 header.main-header .nav-list a.current {
-  color: #B00020;
-  border-bottom: 2px solid #B00020;
+  color:var(--primary-color)
+;
+  border-bottom: 2px solidvar(--primary-color)
+;
   padding-bottom: 4px;
 }
 
@@ -149,3 +157,31 @@ header.main-header .nav-list a.current {
   display: block;
   margin: 0 auto;                /* horizontally center the SVG */
 }
+
+
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #000;
+  text-decoration: black;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.social-letter:hover {
+  background:var(--primary-color)
+;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
