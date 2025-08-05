@@ -15,7 +15,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 a {
-  color: #B00020;
+  color:var(--primary-color)
+;
   text-decoration: none;
 }
 a:hover {
@@ -46,14 +47,16 @@ ul {
   color: #f0f0f0;
 }
 .appointment-btn {
-  background: #B00020;
+  background: var(--primary-color)
+;
   color: #fff;
   padding: 5px 10px;
   border-radius: 3px;
   font-weight: 600;
 }
 .appointment-btn:hover {
-  background: #930018;
+  background: var(--primary-color)
+;
 }
 .social-links a {
   color: #f0f0f0;
@@ -92,7 +95,8 @@ ul {
   padding: 8px 4px;
 }
 .nav-list a.current {
-  color: #B00020;
+  color: var(--primary-color)
+;
 }
 .menu-toggle {
   display: none;
@@ -166,7 +170,7 @@ ul {
   resize: vertical;
 }
 .submit-btn {
-  background: #B00020;
+  background: #000;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -195,7 +199,8 @@ ul {
 }
 .cta-section .chat-btn {
   display: inline-block;
-  background: #B00020;
+  background: var(--primary-color)
+;
   color: #fff;
   padding: 10px 16px;
   margin-bottom: 20px;
@@ -203,7 +208,8 @@ ul {
   font-weight: 700;
 }
 .cta-section .chat-btn:hover {
-  background: #930018;
+  background: var(--primary-color)
+;
 }
 .newsletter p {
   margin-bottom: 10px;
@@ -225,12 +231,14 @@ ul {
   font-size: 0.95em;
   border: none;
   border-radius: 0 3px 3px 0;
-  background: #B00020;
+  background: var(--primary-color)
+;
   color: #fff;
   cursor: pointer;
 }
 .subscribe-form button:hover {
-  background: #930018;
+  background: var(--primary-color)
+;
 }
 .cta-contact {
   font-size: 0.95em;
@@ -347,18 +355,22 @@ header.main-header .main-nav .nav-list a,
 header.main-header .main-nav .nav-list a:hover,
 .mobile-menu a:hover,
 .mobile-menu a.current {
-  color: #B00020; /* or whatever your hover color is */
+  color: var(--primary-color)
+; /* or whatever your hover color is */
 }
 /*—— Highlight “current” nav item on desktop ——*/
 header.main-header .main-nav .nav-list a.current {
-  color: #B00020;                /* your accent color */
-  border-bottom: 2px solid #B00020;
+  color:var(--primary-color)
+;                /* your accent color */
+  border-bottom: 2px solid var(--primary-color)
+;
   padding-bottom: 4px;           /* make room for the underline */
 }
 
 /*—— Highlight “current” nav item in mobile dropdown ——*/
 .mobile-menu a.current {
-  color: #B00020;                /* same accent color */
+  color: var(--primary-color)
+;                /* same accent color */
   background: #f9f9f9;           /* light grey highlight */
 }
 

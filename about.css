@@ -17,7 +17,7 @@ h1, h2, h3 {
   max-width: 1200px;
   margin: auto;
   padding: 5px 15px;
-  display: flex;
+  display: ;
   justify-content: space-between;
   align-items: center;
 }
@@ -25,14 +25,16 @@ h1, h2, h3 {
   margin-right: 20px;
 }
 .appointment-btn {
-  background: #B00020;
+  background: var(--primary-color)
+;
   color: #fff;
   padding: 5px 10px;
   border-radius: 3px;
   font-weight: 600;
 }
 .appointment-btn:hover {
-  background: #930018;
+  background: var(--primary-color)
+;
 }
 .social-links a {
   color: #f0f0f0;
@@ -63,7 +65,8 @@ h1, h2, h3 {
   padding: 8px 4px;
 }
 .nav-list a.current {
-  color: #B00020;
+  color:var(--primary-color)
+;
 }
 .menu-toggle {
   display: none;
@@ -97,7 +100,8 @@ h1, h2, h3 {
 .about-content h2 {
   font-size: 1.5em;
   margin: 1.5em 0 0.5em;
-  color: #B00020;
+  color: var(--primary-color)
+;
 }
 .about-content p {
   margin-bottom: 1em;
@@ -127,7 +131,8 @@ h1, h2, h3 {
 }
 .cta-section .chat-btn {
   display: inline-block;
-  background: #B00020;
+  background: var(--primary-color)
+;
   color: #fff;
   padding: 10px 16px;
   margin-bottom: 20px;
@@ -135,7 +140,8 @@ h1, h2, h3 {
   font-weight: 700;
 }
 .cta-section .chat-btn:hover {
-  background: #930018;
+  background: var(--primary-color)
+;
 }
 .newsletter p {
   margin-bottom: 10px;
@@ -157,12 +163,14 @@ h1, h2, h3 {
   font-size: 0.95em;
   border: none;
   border-radius: 0 3px 3px 0;
-  background: #B00020;
+  background: var(--primary-color)
+;
   color: #fff;
   cursor: pointer;
 }
 .subscribe-form button:hover {
-  background: #930018;
+  background:var(--primary-color)
+;
 }
 .cta-contact {
   font-size: 0.95em;
@@ -286,18 +294,22 @@ header.main-header .main-nav .nav-list a,
 header.main-header .main-nav .nav-list a:hover,
 .mobile-menu a:hover,
 .mobile-menu a.current {
-  color: #B00020; /* or whatever your hover color is */
+  color:var(--primary-color)
+; /* or whatever your hover color is */
 }
 /*—— Highlight “current” nav item on desktop ——*/
 header.main-header .main-nav .nav-list a.current {
-  color: #B00020;                /* your accent color */
-  border-bottom: 2px solid #B00020;
+  color:var(--primary-color)
+;                /* your accent color */
+  border-bottom: 2px solidvar(--primary-color)
+;
   padding-bottom: 4px;           /* make room for the underline */
 }
 
 /*—— Highlight “current” nav item in mobile dropdown ——*/
 .mobile-menu a.current {
-  color: #B00020;                /* same accent color */
+  color: var(--primary-color)
+0;                /* same accent color */
   background: #f9f9f9;           /* light grey highlight */
 }
 
@@ -352,4 +364,12 @@ h1, h2, h3, h4, h5, h6 {
 .social-link svg {
   display: block;
   margin: 0 auto;                /* horizontally center the SVG */
+}
+
+
+@media (max-width: 1100px) {
+  .top-bar-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
